@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+		'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+html,
+body,
+#root,
+.app,
+.content {
+	height: 100%;
+	width: 100%;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+.app {
+	display: flex;
+	position: relative;
+}
+
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: #e0e0e0;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #555;
+}
+
+.container {
+	/* width: 40%; */
+	text-align: center;
+	margin: 0 auto;
+}
+
+.form {
+	width: 60%;
+	text-align: center;
+	margin: 10px auto;
+}
+
+.form h3 {
+	font-size: 2rem;
+	margin-bottom: 4rem;
+}
+
+.buttons {
+	display: flex;
+	width: 60%;
+	margin: 2rem auto;
+	align-items: center;
+}
+
+.form-card {
+	padding-top: 100px;
+	width: 40%;
+	text-align: center;
+	margin: 10px auto;
+	border: 1px grey solid;
+	border-radius: 10px;
+	padding: 20px;
+	max-height: 90vh;
+	min-height: 70vh;
+}
+
+.btn {
+	width: 100%;
+	margin: auto;
+	text-align: center;
+	font-size: 1.2rem;
+}
+
+.vouchers {
+	width: 80%;
+	margin: auto;
+}
+
+.voucher-title {
+	font-size: 1.8rem;
+	margin-bottom: 1rem;
+}
+
+.vacation {
+	background-image: url('./assets/jpg/vacation.jpg');
+	background-size: cover;
+	background-position: bottom;
+}

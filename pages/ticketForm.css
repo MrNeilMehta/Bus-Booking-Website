@@ -1,0 +1,67 @@
+.Bus {
+  margin-bottom: 18px;
+  perspective: 400px;
+  display: grid;
+  place-items: center;
+  grid-gap: 24px;
+}
+
+.Bus .seats {
+  display: grid;
+  grid-gap: 6px;
+  grid-template-columns: repeat(4, min-content);
+  align-items: center;
+}
+
+.Bus .seats .seat:nth-of-type(2n) {
+  margin-right: 12px;
+}
+
+.Bus .seats .seat:nth-of-type(4n) {
+  margin-right: 12px;
+}
+
+/* .Bus .seats .seat:not(.occupied):focus */
+.Bus .seats .seat:not(.occupied):hover {
+  cursor: pointer;
+  background: #c1eac5;
+  transform: scale(1.2);
+}
+
+.Bus .seats .seat.selected::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 2px;
+  width: 12px;
+  height: 12px;
+  border-radius: 100%;
+  background: transparent;
+  border: 1px solid #7bc47f;
+  animation: show-off 0.8s;
+  visibility: hidden;
+}
+
+.seat {
+  display: inline-block;
+  background: #626262;
+  width: 25px;
+  height: 20px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+  position: relative;
+  top: 1px;
+}
+
+.seat.elderly {
+  background: #1a954d;
+}
+
+.seat.selected {
+  background: #7bc47f !important;
+}
+
+.seat.occupied {
+  background: #cfcfcf;
+}
